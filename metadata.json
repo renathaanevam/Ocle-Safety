@@ -1,0 +1,9 @@
+{
+  "name": "OCLE SAFETY",
+  "description": "Sistema responsivo corporativo de segurança para digitalização de inspeções em redes elétricas.",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
