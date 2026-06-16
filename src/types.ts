@@ -5,7 +5,7 @@ export interface Usuario {
   nome: string;
   email: string;
   perfil: UserRole;
-  password?: string;
+  senha: string;
   avatar?: string;
 }
 
