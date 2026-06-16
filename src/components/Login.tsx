@@ -29,11 +29,18 @@ export default function Login({ onLoginSuccess }: LoginProps) {
       (u) => u.email.toLowerCase() === email.toLowerCase()
     );
 
-    if (matchedUser) {
-if (password === (matchedUser as any).senha) {
-  onLoginSuccess(matchedUser);
+if (matchedUser) {
+  console.log('Usuário encontrado:', matchedUser);
+  console.log('Senha digitada:', password);
+  console.log('Senha cadastrada:', matchedUser.senha);
+
+  if (password === matchedUser.senha) {
+    onLoginSuccess(matchedUser);
+  } else {
+    setError('Senha incorreta.');
+  }
 } else {
-  setError('Senha incorreta.');
+  setError('E-mail não cadastrado.');
 }
   };
 
