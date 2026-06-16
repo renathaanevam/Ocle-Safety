@@ -601,7 +601,7 @@ export default function App() {
       {/* Footer copyright (Invisble in print) */}
       <footer className="bg-slate-900 border-t border-slate-950 text-slate-500 py-6 text-center text-xs mt-auto print:hidden" id="page_footer">
         <p className="font-semibold text-slate-400">OCLE SAFETY &copy; {new Date().getFullYear()} - Sistema Integrado de Prevenção Operacional e Segurança do Trabalho </p>
-        <p className="mt-1 text-[11px] text-slate-500 font-medium">Todos os direitos reservados à concessionária. Atendimento estrito de conformidade NR10, NR12 e NR35.</p>
+        <p className="mt-1 text-[11px] text-slate-500 font-medium">Todos os direitos reservados à concessionária. Elaborado por: Renatha Anevam.</p>
       </footer>
 
     </div>
