@@ -6,7 +6,7 @@ export const DEFAULT_USERS: Usuario[] = [
   {
     id: '1',
     nome: 'Renatha Anevam',
-    email: 'renatha@ocle.com.br',
+    email: 'renatha.anevam@ocle.com.br',
     perfil: 'admin'
   }
 ];
