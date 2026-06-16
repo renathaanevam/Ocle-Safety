@@ -30,20 +30,11 @@ export default function Login({ onLoginSuccess }: LoginProps) {
     );
 
     if (matchedUser) {
-      const expectedPass = matchedUser.perfil + '123';
-
-      if (
-        password === expectedPass ||
-        password === 'admin' ||
-        password === '123456'
-      ) {
-        onLoginSuccess(matchedUser);
-      } else {
-        setError('Senha incorreta.');
-      }
-    } else {
-      setError('E-mail não cadastrado.');
-    }
+if (password === (matchedUser as any).senha) {
+  onLoginSuccess(matchedUser);
+} else {
+  setError('Senha incorreta.');
+}
   };
 
   const handleForgot = () => {
