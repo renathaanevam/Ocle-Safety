@@ -181,75 +181,20 @@ export default function Login({ onLoginSuccess }: LoginProps) {
               </button>
             </div>
           </form>
+          <div>
+  <button
+    id="btn_login_submit"
+    type="submit"
+    className="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-md text-white bg-blue-900 hover:bg-blue-950 font-semibold focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-900 transition-colors cursor-pointer"
+  >
+    Entrar no Sistema
+  </button>
+</div>
 
-          {/* Quick Access Helper Panel */}
-          <div className="mt-8 pt-6 border-t border-slate-200">
-            <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-1.5 mb-3">
-              <Sparkles className="w-3.5 h-3.5 text-yellow-500 fill-yellow-500" />
-              Painel de Acesso Rápido para Auditoria
-            </h4>
-            <div className="grid grid-cols-1 gap-2.5">
-              <button
-                onClick={() => {
-                  setEmail('admin@ocle.com');
-                  setPassword('admin123');
-                  loginQuickly('admin');
-                }}
-                className="flex items-center justify-between px-3.5 py-2.5 bg-blue-50 border border-blue-100 rounded-lg hover:bg-blue-100 text-left transition-colors font-medium text-sm text-blue-950 cursor-pointer"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 bg-red-600 rounded-full animate-pulse"></span>
-                  <div>
-                    <p className="font-semibold text-xs text-blue-900 leading-none">Administrador (Renatha)</p>
-                    <p className="text-[10px] text-blue-700 mt-1 font-mono">admin@ocle.com (Senha: admin123)</p>
-                  </div>
-                </div>
-                <Building2 className="w-5 h-5 text-blue-900" />
-              </button>
+</form>
 
-              <button
-                onClick={() => {
-                  setEmail('inspector@ocle.com');
-                  setPassword('inspector123');
-                  loginQuickly('inspector');
-                }}
-                className="flex items-center justify-between px-3.5 py-2.5 bg-yellow-50 border border-yellow-100 rounded-lg hover:bg-yellow-100 text-left transition-colors font-medium text-sm text-yellow-950 cursor-pointer"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 bg-amber-500 rounded-full"></span>
-                  <div>
-                    <p className="font-semibold text-xs text-amber-900 leading-none">Inspetor de Campo (Carlos)</p>
-                    <p className="text-[10px] text-amber-700 mt-1 font-mono">inspector@ocle.com (Senha: inspector123)</p>
-                  </div>
-                </div>
-                <Shield className="w-5 h-5 text-amber-600" />
-              </button>
-
-              <button
-                onClick={() => {
-                  setEmail('gestor@ocle.com');
-                  setPassword('gestor123');
-                  loginQuickly('gestor');
-                }}
-                className="flex items-center justify-between px-3.5 py-2.5 bg-green-50 border border-green-100 rounded-lg hover:bg-green-100 text-left transition-colors font-medium text-sm text-green-950 cursor-pointer"
-              >
-                <div className="flex items-center gap-2">
-                  <span className="w-2.5 h-2.5 bg-green-600 rounded-full"></span>
-                  <div>
-                    <p className="font-semibold text-xs text-green-900 leading-none">Gestor de Contratos (Mariana)</p>
-                    <p className="text-[10px] text-green-700 mt-1 font-mono">gestor@ocle.com (Senha: gestor123)</p>
-                  </div>
-                </div>
-                <Building2 className="w-5 h-5 text-green-700" />
-              </button>
-            </div>
-            <p className="text-[10px] text-slate-500 mt-4 leading-relaxed text-center">
-              *Selecione um botão acima para realizar login automático ou insira as credenciais no formulário.
-            </p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  );
+</div>
+</div>
+</div>
+);
 }
